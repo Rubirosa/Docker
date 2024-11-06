@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  webserver:
+    image: nginx:latest
+    ports:
+      - "8080:80" # Mapea el puerto 80 del contenedor al puerto 8080 de tu máquina
+    volumes:
+      - ./src:/Users\ArkGaming\Desktop\ITLA\DevOps\Proyecto Nginx\html # Mapea el directorio src al directorio HTML de Nginx
